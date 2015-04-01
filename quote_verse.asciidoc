@@ -1,12 +1,46 @@
 How does indenting of a section work?
 
+Let's use a sample from a little Hamlet.
+
+Output of just indenting the passage surrounded by newlines:
+
     To be, or not to be, that is the question—
     Whether 'tis Nobler in the mind to suffer
     The Slings and Arrows of outrageous Fortune,
     Or to take Arms against a Sea of troubles,
     And by opposing, end them? To die, to sleep—
+    
+vs surrounding indented passage with `+....+`:
 
-vs
+....
+To be, or not to be, that is the question—
+Whether 'tis Nobler in the mind to suffer
+The Slings and Arrows of outrageous Fortune,
+Or to take Arms against a Sea of troubles,
+And by opposing, end them? To die, to sleep—
+....
+
+vs surrounding indented passage with `____`:
+
+____
+    To be, or not to be, that is the question—
+    Whether 'tis Nobler in the mind to suffer
+    The Slings and Arrows of outrageous Fortune,
+    Or to take Arms against a Sea of troubles,
+    And by opposing, end them? To die, to sleep—
+____
+
+vs using `+____+` but no indentation:
+
+____
+To be, or not to be, that is the question—
+Whether 'tis Nobler in the mind to suffer
+The Slings and Arrows of outrageous Fortune,
+Or to take Arms against a Sea of troubles,
+And by opposing, end them? To die, to sleep—
+____
+
+vs using `[quote]` combined with indented passage:
 
 [quote]
 ____
@@ -17,7 +51,7 @@ ____
     And by opposing, end them? To die, to sleep—
 ____
 
-vs
+vs using `[quote]` combined with no indentation of passage:
 
 [quote]
 ____
@@ -28,7 +62,7 @@ Or to take Arms against a Sea of troubles,
 And by opposing, end them? To die, to sleep—
 ____
 
-vs 
+vs using `[verse]` combined without indentation:
 
 [verse]
 ____
@@ -39,7 +73,7 @@ Or to take Arms against a Sea of troubles,
 And by opposing, end them? To die, to sleep—
 ____
 
-vs
+vs using `[verse]` nested in `[quote]` without indentation:
 
 
 [quote]
